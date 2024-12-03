@@ -104,10 +104,12 @@ async def download_tool(client: Bot, message: Message|CallbackQuery, msg: Messag
     duration = int(more_info.get("duration", "0"))
     release_year = song_data.get("year")
     album_url = more_info.get("album_url", "")
+    image_url = song_data.get("image", "").replace("150x150", "500x500")
     song_url = song_data.get('perma_url', f"https://jiosaavn.com/songs/{formatted_title}/{song_id}")
 
     # Create caption
     text_data = [
+        f"[\u2063]({image_url})"
         f"**🎧 Song:** [{title}]({song_url})" if title else '',
         f"**📚 Album:** [{album}]({album_url})" if album else '',
         f"**📰 Language:** {language}" if language else '',
@@ -124,14 +126,19 @@ async def download_tool(client: Bot, message: Message|CallbackQuery, msg: Messag
 
     file_name = f"{download_dir}{title}_{quality}.mp3"
 
-    await msg.edit(f"__📥Frozen Downloading {title}__")
+    await msg.edit(f"__📥 Downloading {title}__")
     await client.send_chat_action(
         chat_id=message.from_user.id,
         action=ChatAction.RECORD_AUDIO
     )
 
+    async with aiohttp.ClientSession() as session: 
+        async with session.get(image_url) as response:
+            async with aiofiles.open(thumbnail_location, "wb") as file:
+                await file.write(await response.read())
+
     audio = await Jiosaavn().download_song(song_id=song_id, bitrate=bitrate, download_location=file_name)
-    await msg.edit(f"__📤Frozen Uploading {title}__")
+    await msg.edit(f"__📤 Uploading {title}__")
     await client.send_chat_action(
         chat_id=message.from_user.id,
         action=ChatAction.UPLOAD_AUDIO
@@ -143,10 +150,11 @@ async def download_tool(client: Bot, message: Message|CallbackQuery, msg: Messag
         caption=caption,
         duration=duration,
         title=title,
+        thumb=thumbnail_location,
         performer=singers,
         reply_to_message_id=msg.reply_to_message.id,
-    )
-
+        )
+    
     if not song_file:
         return await msg.edit(text=f"Failed to upload {song}")
 
