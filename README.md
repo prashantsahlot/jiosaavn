@@ -2,7 +2,7 @@
 
 A Python Telegram bot leveraging the Pyrofork library to search and upload songs, albums, playlists, and artists from JioSaavn. This bot utilizes hidden APIs from JioSaavn to provide a seamless music experience on Telegram.
 
-[![GitHub](https://badgen.net/badge/Open%20Source%20%3F/Yes/yellow?icon=github)](https://github.com/prashantsahlot/jiosaavn)
+[![GitHub](https://badgen.net/badge/Open%20Source%20%3F/NO/red?icon=github)](https://github.com/prashantsahlot/jiosaavn)
 
 
 ## Features
