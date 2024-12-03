@@ -20,7 +20,7 @@ async def start_handler(client: Bot, message: Message | CallbackQuery):
         "__- Search for songs, albums, playlists, and artists__\n"
         "__- Download your favorite tracks directly to Telegram__\n"
         "__- Explore various features tailored to enhance your music experience__\n\n"
-        "**Maintained By:** [techscoder](https://t.me/techscoder)"
+        "**Maintained By:** [𝙼𝚛 🇮🇳 ꪖꪀꪮꪀꪗꪑꪮꪊ𝘴 💠](https://t.me/vibeshift_bots)"
     )
 
     buttons = [[
@@ -30,7 +30,7 @@ async def start_handler(client: Bot, message: Message | CallbackQuery):
         InlineKeyboardButton('Help 💡', callback_data='help'),
         InlineKeyboardButton('Settings ⚙', callback_data='settings')
         ],[
-        InlineKeyboardButton('Open Source Repository 🌐', url='https://github.com/teleservices-api/jiosaavn')
+        InlineKeyboardButton('SUPPORT 🌐', url='https://t.me/Frozensupport1')
     ]]
     
     if isinstance(message, Message):
@@ -71,9 +71,9 @@ async def about(client: Bot, message: Message|CallbackQuery):
         f"**🤖 Bot Name:** {me.mention()}\n\n"
         "**📝 Language:** [Python 3](https://www.python.org/)\n\n"
         "**🧰 Framework:** [Pyrogram](https://github.com/pyrogram/pyrogram)\n\n"
-        "**👨‍💻 Developer:** [techscoder](https://t.me/techscoder)\n\n"
-        "**📢 Updates Channel:** [Teleservice Api](https://t.me/Teleservices_Api)\n\n"
-        "**🔗 Source Code:** [GitHub Repository](https://github.com/teleservices-api/jiosaavn)\n\n"
+        "**👨‍💻 Developer:** [𝙼𝚛 🇮🇳 ꪖꪀꪮꪀꪗꪑꪮꪊ𝘴 💠](https://t.me/vibeshift_bots)\n\n"
+        "**📢 Updates Channel:** [Vibe shift bots](https://t.me/vibeshiftbots)\n\n"
+        "**🌹 Support:** [Frozen_chats](https://github.com/teleservices-api/jiosaavn)\n\n"
     )
 
     buttons = [[
