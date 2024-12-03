@@ -2,7 +2,7 @@
 
 A Python Telegram bot leveraging the Pyrofork library to search and upload songs, albums, playlists, and artists from JioSaavn. This bot utilizes hidden APIs from JioSaavn to provide a seamless music experience on Telegram.
 
-[![GitHub](https://badgen.net/badge/Open%20Source%20%3F/Yes/yellow?icon=github)](https://github.com/teleservices-api/jiosaavn)
+[![GitHub](https://badgen.net/badge/Open%20Source%20%3F/Yes/yellow?icon=github)](https://github.com/prashantsahlot/jiosaavn)
 
 
 ## Features
@@ -29,7 +29,7 @@ A Python Telegram bot leveraging the Pyrofork library to search and upload songs
 
 1. **Clone the Repository**: 
    ```sh
-   git clone https://github.com/teleservices-api/jiosaavn.git
+   git clone https://github.com/prashantsahlot/jiosaavn.git
    ```
 2. **Install Dependencies**:
    ```sh
@@ -44,7 +44,7 @@ A Python Telegram bot leveraging the Pyrofork library to search and upload songs
 
 1. **Deploy to Koyeb**:
 
-   [![](https://img.shields.io/badge/Click_here-blue)](https://github.com/teleservices-api/jiosaavn?tab=readme-ov-file#how-to-deploy)
+   [![](https://img.shields.io/badge/Click_here-blue)](https://github.com/prashantsahlot/jiosaavn?tab=readme-ov-file#how-to-deploy)
 
 2. **Local Setup**:
    - Ensure you have Python and pip installed.
@@ -68,7 +68,7 @@ A Python Telegram bot leveraging the Pyrofork library to search and upload songs
 
 3. Once the environment variables are set, click **Deploy** to deploy the application.
 
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&builder=buildpack&repository=https://github.com/teleservices-api/jiosaavn&branch=main&name=jiosaavn-api&run_command=python3%20-m%20jiosaavn&env[DATABASE_URL]=your_database_url&env[BOT_TOKEN]=your_bot_token&env[API_HASH]=your_api_hash&env[API_ID]=your_api_id)
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&builder=buildpack&repository=https://github.com/prashantsahlot/jiosaavn&branch=main&name=jiosaavn-api&run_command=python3%20-m%20jiosaavn&env[DATABASE_URL]=your_database_url&env[BOT_TOKEN]=your_bot_token&env[API_HASH]=your_api_hash&env[API_ID]=your_api_id)
 
 ## Contributing
 
@@ -81,4 +81,4 @@ This project is licensed under the MIT License.
 
 ## Credit 
 
-[Ns-AnoNymouS](https://github.com/Ns-AnoNymouS) For His Amazing Repo
+[𝙼𝚛 🇮🇳 ꪖꪀꪮꪀꪗꪑꪮꪊ𝘴 💠](https://t.me/vibeshift_bots) For His Amazing Repo
