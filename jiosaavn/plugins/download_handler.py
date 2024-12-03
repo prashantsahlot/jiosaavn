@@ -125,6 +125,7 @@ async def download_tool(client: Bot, message: Message|CallbackQuery, msg: Messag
         os.makedirs(download_dir)
 
     file_name = f"{download_dir}{title}_{quality}.mp3"
+    thumbnail_location = f"{download_dir}{title}.jpg"
 
     await msg.edit(f"__📥 Downloading {title}__")
     await client.send_chat_action(
