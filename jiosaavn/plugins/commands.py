@@ -24,7 +24,7 @@ async def start_handler(client: Bot, message: Message | CallbackQuery):
     )
 
     buttons = [[
-        InlineKeyboardButton('Owner 🧑', url='https://t.me/techscoder'),
+        InlineKeyboardButton('Owner 🧑', url='https://t.me/vibeshift_bots'),
         InlineKeyboardButton('About 📕', callback_data='about')
     ], [
         InlineKeyboardButton('Help 💡', callback_data='help'),
@@ -73,7 +73,7 @@ async def about(client: Bot, message: Message|CallbackQuery):
         "**🧰 Framework:** [Pyrogram](https://github.com/pyrogram/pyrogram)\n\n"
         "**👨‍💻 Developer:** [𝙼𝚛 🇮🇳 ꪖꪀꪮꪀꪗꪑꪮꪊ𝘴 💠](https://t.me/vibeshift_bots)\n\n"
         "**📢 Updates Channel:** [Vibe shift bots](https://t.me/vibeshiftbots)\n\n"
-        "**🌹 Support:** [Frozen_chats](https://github.com/teleservices-api/jiosaavn)\n\n"
+        "**🌹 Support:** [Frozen_chats](https://t.me/Frozensupport1)\n\n"
     )
 
     buttons = [[
