@@ -20,11 +20,11 @@ async def start_handler(client: Bot, message: Message | CallbackQuery):
         "__- Search for songs, albums, playlists, and artists__\n"
         "__- Download your favorite tracks directly to Telegram__\n"
         "__- Explore various features tailored to enhance your music experience__\n\n"
-        "**Maintained By:** [𝙼𝚛 🇮🇳 ꪖꪀꪮꪀꪗꪑꪮꪊ𝘴 💠](https://t.me/vibeshift_bots)"
+        "**Maintained By:** [𝙼𝚛 🇮🇳 ꪖꪀꪮꪀꪗꪑꪮꪊ𝘴 💠](https://t.me/xyz9372)"
     )
 
     buttons = [[
-        InlineKeyboardButton('Owner 🧑', url='https://t.me/vibeshift_bots'),
+        InlineKeyboardButton('𝙼𝚛 🇮🇳 ꪖꪀꪮꪀꪗꪑꪮꪊ𝘴 💠', url='https://t.me/xyz9372'),
         InlineKeyboardButton('About 📕', callback_data='about')
     ], [
         InlineKeyboardButton('Help 💡', callback_data='help'),
@@ -71,7 +71,7 @@ async def about(client: Bot, message: Message|CallbackQuery):
         f"**🤖 Bot Name:** {me.mention()}\n\n"
         "**📝 Language:** [Python 3](https://www.python.org/)\n\n"
         "**🧰 Framework:** [Pyrogram](https://github.com/pyrogram/pyrogram)\n\n"
-        "**👨‍💻 Developer:** [𝙼𝚛 🇮🇳 ꪖꪀꪮꪀꪗꪑꪮꪊ𝘴 💠](https://t.me/vibeshift_bots)\n\n"
+        "**👨‍💻 Developer:** [𝙼𝚛 🇮🇳 ꪖꪀꪮꪀꪗꪑꪮꪊ𝘴 💠](https://t.me/xyz9372)\n\n"
         "**📢 Updates Channel:** [Vibe shift bots](https://t.me/vibeshiftbots)\n\n"
         "**🌹 Support:** [Frozen_chats](https://t.me/Frozensupport1)\n\n"
     )
